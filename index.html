@@ -123,7 +123,7 @@
         <li><strong>تسجيل الدخول بحساب جوجل (اختياري):</strong> عند اختيار "تسجيل الدخول عبر Google"، نحصل من جوجل على اسمك وبريدك الإلكتروني وصورة حسابك (إن وُجدت) لإنشاء/الدخول لحسابك في Monevro.</li>
         <li><strong>البيانات المالية:</strong> المصروفات، الدخل، الميزانيات (Budgets)، والأهداف المالية (Goals) التي تُدخلها بنفسك داخل التطبيق، ويتم تخزينها في قاعدة بيانات Cloud Firestore (من Google) المرتبطة بحسابك.</li>
         <li><strong>جهات الاتصال التي تضيفها يدويًا (اختياري):</strong> الاسم ورقم الهاتف اللذان تكتبهما بنفسك داخل التطبيق، ويتم تخزينهما في Cloud Firestore المرتبطة بحسابك. لا يصل التطبيق إلى جهات الاتصال المحفوظة على جهازك ولا يقرؤها.</li>
-        <li><strong>بيانات الإيصالات (اختياري):</strong> عند استخدام ميزة مسح الإيصالات، يتم إرسال صورة الإيصال إلى خدمة Google Gemini لاستخراج تفاصيل المصروف تلقائيًا.</li>
+        <li><strong>بيانات الإيصالات (اختياري):</strong> عند استخدام ميزة مسح الإيصالات، يتم إرسال صورة الإيصال إلى خدمة Google Gemini لاستخراج تفاصيل المصروف تلقائيًا. لا نقوم بتخزين صور الإيصالات لدينا؛ تُستخدم فقط لاستخراج بيانات المصروف ثم تُحذف، ويُحفظ فقط ما تم استخراجه من بيانات (مثل المبلغ والتاريخ والتاجر).</li>
         <li><strong>بيانات الاشتراك:</strong> حالة اشتراكك (مجاني/شهري/سنوي) تُدار عبر خدمة RevenueCat لإدارة عمليات الشراء داخل التطبيق.</li>
         <li><strong>بيانات المصادقة بالبصمة (اختياري):</strong> إذا فعّلت تسجيل الدخول بالبصمة، تتم معالجة بياناتك البيومترية بالكامل محليًا على جهازك عبر أنظمة الأمان الخاصة بنظام التشغيل (Android Keystore)، ولا يتم إرسالها أو تخزينها على خوادمنا أو خوادم أي طرف ثالث.</li>
         <li><strong>رمز الإشعارات (FCM Token):</strong> لإرسال إشعارات التذكير والتنبيهات المتعلقة بميزانيتك، نستخدم رمز جهاز فريد عبر خدمة Firebase Cloud Messaging من Google.</li>
@@ -196,7 +196,7 @@
       <h2>مشاركة البيانات مع أطراف ثالثة</h2>
       <p>نشارك بياناتك فقط مع مزودي الخدمات التالية، وذلك بالقدر اللازم لتشغيل التطبيق:</p>
       <ul>
-        <li><strong>Google Firebase</strong> (المصادقة وقاعدة البيانات والتخزين السحابي والإشعارات والتحليلات Analytics)</li>
+        <li><strong>Google Firebase</strong> (المصادقة وقاعدة البيانات والإشعارات والتحليلات Analytics)</li>
         <li><strong>OpenRouter</strong> (توليد النصائح المالية بالذكاء الاصطناعي)</li>
         <li><strong>Google Gemini</strong> (نصائح احتياطية + قراءة الإيصالات)</li>
         <li><strong>RevenueCat</strong> (إدارة الاشتراكات والمدفوعات داخل التطبيق)</li>
@@ -299,7 +299,7 @@
         <li><strong>Sign in with Google (optional):</strong> when you choose "Sign in with Google," we receive your name, email address, and profile photo (if available) from Google to create/access your Monevro account.</li>
         <li><strong>Financial data:</strong> expenses, income, budgets, and financial goals you enter in the app, stored in Cloud Firestore (Google) linked to your account.</li>
         <li><strong>Contacts you add manually (optional):</strong> the name and phone number you type yourself inside the app, stored in Cloud Firestore linked to your account. The app does not access or read the contacts saved on your device.</li>
-        <li><strong>Receipt data (optional):</strong> when you use the receipt-scanning feature, the receipt image is sent to Google Gemini to automatically extract expense details.</li>
+        <li><strong>Receipt data (optional):</strong> when you use the receipt-scanning feature, the receipt image is sent to Google Gemini to automatically extract expense details. We do not store receipt images; they are used only to extract the expense details and are then discarded, and only the extracted data (such as amount, date, and merchant) is saved.</li>
         <li><strong>Subscription data:</strong> your subscription tier (free/monthly/yearly) is managed via RevenueCat, our in-app purchase management provider.</li>
         <li><strong>Biometric login data (optional):</strong> if you enable biometric login, your biometric data is processed entirely on-device via your OS's secure hardware (Android Keystore) and is never transmitted to or stored on our servers or any third party.</li>
         <li><strong>Push notification token (FCM):</strong> to deliver reminders and budget alerts, we use a unique device token via Google's Firebase Cloud Messaging service.</li>
@@ -372,7 +372,7 @@
       <h2>Third-Party Sharing</h2>
       <p>We only share your data with the following service providers, to the extent necessary to operate the app:</p>
       <ul>
-        <li><strong>Google Firebase</strong> (authentication, database, cloud storage, notifications, and Analytics)</li>
+        <li><strong>Google Firebase</strong> (authentication, database, notifications, and Analytics)</li>
         <li><strong>OpenRouter</strong> (AI-generated financial advice)</li>
         <li><strong>Google Gemini</strong> (backup advice generation + receipt OCR)</li>
         <li><strong>RevenueCat</strong> (in-app subscription and purchase management)</li>
