@@ -122,6 +122,7 @@
         <li><strong>بيانات الحساب:</strong> البريد الإلكتروني، ومعرّف المستخدم (User ID)، وذلك عبر خدمة Firebase Authentication من Google لإنشاء حسابك وتسجيل الدخول.</li>
         <li><strong>تسجيل الدخول بحساب جوجل (اختياري):</strong> عند اختيار "تسجيل الدخول عبر Google"، نحصل من جوجل على اسمك وبريدك الإلكتروني وصورة حسابك (إن وُجدت) لإنشاء/الدخول لحسابك في Monevro.</li>
         <li><strong>البيانات المالية:</strong> المصروفات، الدخل، الميزانيات (Budgets)، والأهداف المالية (Goals) التي تُدخلها بنفسك داخل التطبيق، ويتم تخزينها في قاعدة بيانات Cloud Firestore (من Google) المرتبطة بحسابك.</li>
+        <li><strong>جهات الاتصال التي تضيفها يدويًا (اختياري):</strong> الاسم ورقم الهاتف اللذان تكتبهما بنفسك داخل التطبيق، ويتم تخزينهما في Cloud Firestore المرتبطة بحسابك. لا يصل التطبيق إلى جهات الاتصال المحفوظة على جهازك ولا يقرؤها.</li>
         <li><strong>بيانات الإيصالات (اختياري):</strong> عند استخدام ميزة مسح الإيصالات، يتم إرسال صورة الإيصال إلى خدمة Google Gemini لاستخراج تفاصيل المصروف تلقائيًا.</li>
         <li><strong>بيانات الاشتراك:</strong> حالة اشتراكك (مجاني/شهري/سنوي) تُدار عبر خدمة RevenueCat لإدارة عمليات الشراء داخل التطبيق.</li>
         <li><strong>بيانات المصادقة بالبصمة (اختياري):</strong> إذا فعّلت تسجيل الدخول بالبصمة، تتم معالجة بياناتك البيومترية بالكامل محليًا على جهازك عبر أنظمة الأمان الخاصة بنظام التشغيل (Android Keystore)، ولا يتم إرسالها أو تخزينها على خوادمنا أو خوادم أي طرف ثالث.</li>
@@ -252,7 +253,7 @@
       </ul>
       <p class="muted">
         يتم الحذف بشكل فوري ونهائي ولا يمكن التراجع عنه أو استعادة البيانات
-        بعد تأكيد العملية. يمكنك أيضًا طلب الحذف عبر مراسلتنا على البريد أسفل الصفحة.
+        بعد تأكيد العملية. يمكنك أيضًا طلب الحذف عبر مراسلتنا على البريد أسفل الصفحة. ملحوظة: بيانات التحليلات المجهولة (Firebase Analytics) قد تبقى لفترة محدودة وفق إعدادات الاحتفاظ ثم تُحذف تلقائيًا، كما أن السجلات لدى مزودي الإعلانات والذكاء الاصطناعي تخضع لسياساتهم الخاصة.
       </p>
     </section>
 
@@ -297,6 +298,7 @@
         <li><strong>Account data:</strong> your email address and user ID, via Firebase Authentication (Google) to create and manage your account.</li>
         <li><strong>Sign in with Google (optional):</strong> when you choose "Sign in with Google," we receive your name, email address, and profile photo (if available) from Google to create/access your Monevro account.</li>
         <li><strong>Financial data:</strong> expenses, income, budgets, and financial goals you enter in the app, stored in Cloud Firestore (Google) linked to your account.</li>
+        <li><strong>Contacts you add manually (optional):</strong> the name and phone number you type yourself inside the app, stored in Cloud Firestore linked to your account. The app does not access or read the contacts saved on your device.</li>
         <li><strong>Receipt data (optional):</strong> when you use the receipt-scanning feature, the receipt image is sent to Google Gemini to automatically extract expense details.</li>
         <li><strong>Subscription data:</strong> your subscription tier (free/monthly/yearly) is managed via RevenueCat, our in-app purchase management provider.</li>
         <li><strong>Biometric login data (optional):</strong> if you enable biometric login, your biometric data is processed entirely on-device via your OS's secure hardware (Android Keystore) and is never transmitted to or stored on our servers or any third party.</li>
@@ -428,7 +430,7 @@
       </ul>
       <p class="muted">
         Deletion is immediate and permanent — it cannot be undone, and data
-        cannot be recovered once the action is confirmed. You can also request deletion by emailing us at the address below.
+        cannot be recovered once the action is confirmed. You can also request deletion by emailing us at the address below. Note: anonymous analytics data (Firebase Analytics) may remain for a limited period under its retention settings and is then deleted automatically, and logs held by advertising and AI providers are subject to their own policies.
       </p>
     </section>
 
