@@ -98,7 +98,7 @@
   <header>
     <h1>Monevro</h1>
     <p>المطوّر: <strong>Skillro</strong> &nbsp;|&nbsp; Developer: <strong>Skillro</strong></p>
-    <p id="updated-label">تاريخ السريان وآخر تحديث: 17 أكتوبر 2026 &nbsp;|&nbsp; Effective &amp; last updated: October 17, 2026</p>
+    <p id="updated-label">تاريخ السريان وآخر تحديث: 18 أكتوبر 2026 &nbsp;|&nbsp; Effective &amp; last updated: October 18, 2026</p>
   </header>
 
   <div class="lang-toggle">
@@ -122,7 +122,7 @@
         <li><strong>بيانات الحساب:</strong> البريد الإلكتروني، ومعرّف المستخدم (User ID)، وذلك عبر خدمة Firebase Authentication من Google لإنشاء حسابك وتسجيل الدخول.</li>
         <li><strong>تسجيل الدخول بحساب جوجل (اختياري):</strong> عند اختيار "تسجيل الدخول عبر Google"، نحصل من جوجل على اسمك وبريدك الإلكتروني وصورة حسابك (إن وُجدت) لإنشاء/الدخول لحسابك في Monevro.</li>
         <li><strong>البيانات المالية:</strong> المصروفات، الدخل، الميزانيات (Budgets)، والأهداف المالية (Goals) التي تُدخلها بنفسك داخل التطبيق، ويتم تخزينها في قاعدة بيانات Cloud Firestore (من Google) المرتبطة بحسابك.</li>
-        <li><strong>جهات الاتصال التي تضيفها يدويًا (اختياري):</strong> الاسم ورقم الهاتف اللذان تكتبهما بنفسك داخل التطبيق، ويتم تخزينهما في Cloud Firestore المرتبطة بحسابك. لا يصل التطبيق إلى جهات الاتصال المحفوظة على جهازك ولا يقرؤها.</li>
+        <li><strong>جهات الاتصال التي تضيفها يدويًا (اختياري):</strong> الاسم والبريد الإلكتروني أو رقم الهاتف اللذان تكتبهما بنفسك داخل التطبيق، ويتم تخزينهما في Cloud Firestore المرتبطة بحسابك. لا يصل التطبيق إلى جهات الاتصال المحفوظة على جهازك ولا يقرؤها.</li>
         <li><strong>بيانات الإيصالات (اختياري):</strong> عند استخدام ميزة مسح الإيصالات، يتم إرسال صورة الإيصال إلى خدمة Google Gemini لاستخراج تفاصيل المصروف تلقائيًا. لا نقوم بتخزين صور الإيصالات لدينا؛ تُستخدم فقط لاستخراج بيانات المصروف ثم تُحذف، ويُحفظ فقط ما تم استخراجه من بيانات (مثل المبلغ والتاريخ والتاجر).</li>
         <li><strong>بيانات الاشتراك:</strong> حالة اشتراكك (مجاني/شهري/سنوي) تُدار عبر خدمة RevenueCat لإدارة عمليات الشراء داخل التطبيق.</li>
         <li><strong>بيانات المصادقة بالبصمة (اختياري):</strong> إذا فعّلت تسجيل الدخول بالبصمة، تتم معالجة بياناتك البيومترية بالكامل محليًا على جهازك عبر أنظمة الأمان الخاصة بنظام التشغيل (Android Keystore)، ولا يتم إرسالها أو تخزينها على خوادمنا أو خوادم أي طرف ثالث.</li>
@@ -161,7 +161,7 @@
         حساب AdMob الخاص بالتطبيق مرتبط بـ Firebase، لذلك قد تتم مشاركة بيانات إيراد الإعلانات على مستوى كل مشاهدة (Impression-level ad revenue) بين AdMob وFirebase لأغراض التحليلات وقياس الأداء.
       </p>
       <p>
-        لمستخدمي المنطقة الاقتصادية الأوروبية (EEA) والمملكة المتحدة وسويسرا، يعرض التطبيق نموذج موافقة (Consent Management Platform) من Google عند أول استخدام، يتيح لك قبول أو رفض استخدام بياناتك لأغراض الإعلانات المخصصة (Personalized Ads)، وفقًا لسياسة موافقة المستخدم الأوروبية الخاصة بـ Google. يمكنك مراجعة أو تغيير اختيارك في أي وقت من داخل التطبيق عبر: <strong>الإعدادات ← الخصوصية والبيانات ← خصوصية الإعلانات</strong>.
+        لمستخدمي المنطقة الاقتصادية الأوروبية (EEA) والمملكة المتحدة وسويسرا، يعرض التطبيق نموذج موافقة (Consent Management Platform) من Google عند أول استخدام، يتيح لك قبول أو رفض استخدام بياناتك لأغراض الإعلانات المخصصة (Personalized Ads)، وفقًا لسياسة موافقة المستخدم الأوروبية الخاصة بـ Google. يمكنك مراجعة أو تغيير اختيارك في أي وقت من داخل التطبيق عبر: <strong>الملف الشخصي ← البيانات والخصوصية ← خصوصية الإعلانات</strong> (يظهر هذا الخيار للمستخدمين في المناطق التي يُشترط فيها ذلك).
       </p>
       <p>
         كما يمكنك التحكم في الإعلانات المخصصة على مستوى جهازك من إعدادات Android (إعدادات Google ← الإعلانات)، حيث يمكنك إعادة تعيين معرّف الإعلانات أو حذفه أو إيقاف تخصيص الإعلانات.
@@ -225,10 +225,10 @@
     <section class="card">
       <h2>حقوقك</h2>
       <ul>
-        <li><strong>حذف البيانات المالية فقط:</strong> يمكنك إعادة تعيين بياناتك المالية (مسح المصروفات/الميزانيات/الأهداف) من داخل إعدادات التطبيق مع الاحتفاظ بحسابك.</li>
+        <li><strong>حذف البيانات المالية فقط:</strong> يمكنك إعادة تعيين بياناتك المالية (مسح المصروفات/الميزانيات/الأهداف) من الشاشة الرئيسية للتطبيق عبر القائمة (⋮) ← "مسح كل البيانات"، مع الاحتفاظ بحسابك.</li>
         <li><strong>حذف الحساب بالكامل:</strong> يمكنك حذف حسابك وكل بياناتك المرتبطة به نهائيًا مباشرة من داخل التطبيق (راجع قسم "حذف الحساب" أدناه)، أو عبر التواصل معنا على البريد أسفل الصفحة.</li>
         <li><strong>الوصول والتصحيح:</strong> يمكنك مراجعة وتعديل بياناتك المالية مباشرة من داخل التطبيق في أي وقت.</li>
-        <li><strong>خصوصية الإعلانات:</strong> يمكنك مراجعة أو تغيير موافقتك على الإعلانات المخصصة في أي وقت من داخل التطبيق عبر الإعدادات ← الخصوصية والبيانات ← خصوصية الإعلانات.</li>
+        <li><strong>خصوصية الإعلانات:</strong> يمكنك مراجعة أو تغيير موافقتك على الإعلانات المخصصة في أي وقت من داخل التطبيق عبر الملف الشخصي ← البيانات والخصوصية ← خصوصية الإعلانات (حيثما كان هذا الخيار مطلوبًا في منطقتك).</li>
         <li><strong>حقوق إضافية (لمستخدمي المنطقة الاقتصادية الأوروبية والمملكة المتحدة):</strong> يحق لك طلب نسخة من بياناتك، وتصحيحها، وحذفها، وتقييد معالجتها، ونقلها، والاعتراض على معالجتها، وسحب موافقتك في أي وقت، وتقديم شكوى لدى الجهة الرقابية لحماية البيانات في بلدك. لممارسة أي من هذه الحقوق تواصل معنا على البريد أسفل الصفحة.</li>
       </ul>
     </section>
@@ -298,7 +298,7 @@
         <li><strong>Account data:</strong> your email address and user ID, via Firebase Authentication (Google) to create and manage your account.</li>
         <li><strong>Sign in with Google (optional):</strong> when you choose "Sign in with Google," we receive your name, email address, and profile photo (if available) from Google to create/access your Monevro account.</li>
         <li><strong>Financial data:</strong> expenses, income, budgets, and financial goals you enter in the app, stored in Cloud Firestore (Google) linked to your account.</li>
-        <li><strong>Contacts you add manually (optional):</strong> the name and phone number you type yourself inside the app, stored in Cloud Firestore linked to your account. The app does not access or read the contacts saved on your device.</li>
+        <li><strong>Contacts you add manually (optional):</strong> the name and email address or phone number you type yourself inside the app, stored in Cloud Firestore linked to your account. The app does not access or read the contacts saved on your device.</li>
         <li><strong>Receipt data (optional):</strong> when you use the receipt-scanning feature, the receipt image is sent to Google Gemini to automatically extract expense details. We do not store receipt images; they are used only to extract the expense details and are then discarded, and only the extracted data (such as amount, date, and merchant) is saved.</li>
         <li><strong>Subscription data:</strong> your subscription tier (free/monthly/yearly) is managed via RevenueCat, our in-app purchase management provider.</li>
         <li><strong>Biometric login data (optional):</strong> if you enable biometric login, your biometric data is processed entirely on-device via your OS's secure hardware (Android Keystore) and is never transmitted to or stored on our servers or any third party.</li>
@@ -337,7 +337,7 @@
         The app's AdMob account is linked to Firebase, so impression-level ad revenue data may be shared between AdMob and Firebase for analytics and performance measurement.
       </p>
       <p>
-        For users in the European Economic Area (EEA), the UK, and Switzerland, the app shows a Google Consent Management Platform (CMP) on first use, letting you accept or decline the use of your data for personalized ads, in accordance with Google's EU user consent policy. You can review or change your choice anytime from: <strong>Settings → Data &amp; Privacy → Ads Privacy Options</strong>.
+        For users in the European Economic Area (EEA), the UK, and Switzerland, the app shows a Google Consent Management Platform (CMP) on first use, letting you accept or decline the use of your data for personalized ads, in accordance with Google's EU user consent policy. You can review or change your choice anytime from: <strong>Profile → Data &amp; Privacy → Ads Privacy</strong> (this option is shown to users in regions where it is required).
       </p>
       <p>
         You can also control ad personalization at the device level from Android settings (Google settings → Ads), where you can reset or delete your advertising ID and opt out of ads personalization.
@@ -401,10 +401,10 @@
     <section class="card">
       <h2>Your Rights</h2>
       <ul>
-        <li><strong>Reset financial data only:</strong> you can reset your financial data (clear expenses/budgets/goals) from within the app settings while keeping your account.</li>
+        <li><strong>Reset financial data only:</strong> you can reset your financial data (clear expenses/budgets/goals) from the app's Home screen via the menu (⋮) → "Reset all data", while keeping your account.</li>
         <li><strong>Full account deletion:</strong> you can permanently delete your account and all associated data directly within the app (see the "Delete Account" section below), or by contacting us at the email below.</li>
         <li><strong>Access and correction:</strong> you can review and edit your financial data directly within the app at any time.</li>
-        <li><strong>Ads privacy:</strong> you can review or change your consent for personalized ads at any time from within the app via Settings → Data &amp; Privacy → Ads Privacy Options.</li>
+        <li><strong>Ads privacy:</strong> you can review or change your consent for personalized ads at any time from within the app via Profile → Data &amp; Privacy → Ads Privacy (where this option is required in your region).</li>
         <li><strong>Additional rights (EEA and UK users):</strong> you have the right to request a copy of your data, rectify it, erase it, restrict its processing, port it, object to its processing, withdraw your consent at any time, and lodge a complaint with your local data protection authority. To exercise any of these rights, contact us at the email below.</li>
       </ul>
     </section>
