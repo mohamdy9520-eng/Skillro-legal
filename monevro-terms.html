@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>Terms of Service – Monevro by Skillro</title>
+<meta name="description" content="The terms that govern your use of Monevro, developed by Skillro.">
+<style>
+  :root {
+    --ink: #1c2b4d;
+    --muted: #566180;
+    --bg: #fcf8f3;
+    --teal: #1c2b4d;
+    --coral: #f7931e;
+    --line: #eadfd0;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: 1rem; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Tahoma, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.65;
+  }
+  .topbar {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .brand { display: flex; align-items: center; gap: 0.75rem; font-weight: 700; color: var(--ink); text-decoration: none; }
+  .brand img { width: 44px; height: 44px; border-radius: 12px; }
+  .lang-toggle { display: flex; gap: 4px; background: #f3ebdf; border-radius: 999px; padding: 4px; }
+  .lang-toggle button {
+    border: none; background: transparent; padding: 6px 14px; border-radius: 999px;
+    cursor: pointer; font-weight: 600; font-size: 13px; color: var(--muted); font-family: inherit;
+  }
+  .lang-toggle button.active { background: var(--teal); color: #fff; }
+  .lang-toggle button:focus-visible { outline: 3px solid var(--coral); outline-offset: 2px; }
+  main { max-width: 720px; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; }
+  h1 { font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.15; margin: 0 0 0.5rem; letter-spacing: -0.02em; }
+  h2 { font-size: 1.2rem; margin: 2.2rem 0 0.6rem; }
+  p, li { margin: 0 0 0.9rem; color: #2f3b5c; }
+  ul { padding-inline-start: 1.25rem; margin: 0 0 1rem; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
+  a { color: var(--teal); }
+  a:focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
+  .lang-block { display: none; }
+  .lang-block.visible { display: block; }
+  footer { max-width: 720px; margin: 0 auto; padding: 0 1.5rem 3rem; font-size: 0.95rem; color: var(--muted); }
+  footer nav a { margin-inline-end: 1rem; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html"><img src="skillro-logo.png" alt="Skillro logo" width="44" height="44"><span>Skillro</span></a>
+  <div class="lang-toggle" role="group" aria-label="Language">
+    <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+    <button id="btn-ar" onclick="setLang('ar')">العربية</button>
+  </div>
+</div>
+
+<main>
+
+  <!-- ENGLISH -->
+  <section id="en" class="lang-block visible" dir="ltr">
+    <h1>Terms of Service</h1>
+    <p class="updated">Last updated: October 2026</p>
+
+    <p>These Terms of Service ("Terms") govern your use of the Monevro mobile application ("Monevro", "the App"), developed by Skillro ("we", "us"). By creating an account or using the App, you agree to these Terms. If you do not agree, please do not use the App.</p>
+
+    <h2>1. The Service</h2>
+    <p>Monevro helps you track expenses and income, plan budgets, set financial goals, and scan receipts. It also offers optional AI-assisted features that generate financial suggestions based on the data you enter.</p>
+
+    <h2>2. Accounts</h2>
+    <p>You must provide accurate information when creating an account. You are responsible for keeping your login credentials confidential and for all activity under your account.</p>
+
+    <h2>3. Not Financial Advice</h2>
+    <p>Monevro is a personal organization tool. The AI-generated tips, plans, and receipt readings are provided for general information only. They are not professional financial, investment, tax, or legal advice, and may contain errors. Please verify important figures yourself and consult a qualified professional before making financial decisions. You remain solely responsible for your own financial decisions.</p>
+
+    <h2>4. Subscriptions and Billing</h2>
+    <ul>
+      <li>Monevro offers a free tier and optional premium subscriptions (monthly or yearly) purchased through Google Play Billing and managed with RevenueCat.</li>
+      <li>Subscriptions automatically renew for the same period and price unless canceled at least 24 hours before the end of the current period.</li>
+      <li>You can manage or cancel your subscription at any time through your Google Play account settings.</li>
+      <li>Prices are displayed in your local currency and may vary by region.</li>
+      <li>No refunds are provided for partial subscription periods, except where required by applicable law or Google Play's refund policy.</li>
+    </ul>
+
+    <h2>5. Advertising</h2>
+    <p>The free tier displays ads served by Google AdMob. How advertising data is handled is explained in our <a href="monevro-privacy.html" id="privacy-inline">Privacy Policy</a>.</p>
+
+    <h2>6. User Content</h2>
+    <p>You keep ownership of the data you enter, such as expenses, income, budgets, goals, and contacts. By using the App, you grant Skillro a limited license to store and process that data solely to provide the App's features to you, including sending the necessary summarized data to the AI providers described in our Privacy Policy.</p>
+
+    <h2>7. Acceptable Use</h2>
+    <p>You agree not to misuse the App, including attempting to disrupt its operation, bypass plan limits, reverse-engineer it, abuse the AI features, or use it for any unlawful purpose.</p>
+
+    <h2>8. Termination</h2>
+    <p>We may suspend or terminate your access to the App if you violate these Terms. You may stop using the App and delete your account at any time from the app settings.</p>
+
+    <h2>9. Disclaimer</h2>
+    <p>Monevro is provided "as is" without warranties of any kind. We do not guarantee that the App will be uninterrupted or error-free, or the accuracy of AI-generated suggestions and receipt extraction.</p>
+
+    <h2>10. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by law, Skillro and its developers are not liable for any indirect, incidental, or consequential damages, or for financial losses, arising from your use of the App.</p>
+
+    <h2>11. Changes to These Terms</h2>
+    <p>We may update these Terms from time to time. Continued use of the App after changes take effect means you accept the revised Terms.</p>
+
+    <h2>12. Contact</h2>
+    <p>If you have questions about these Terms, contact Skillro at <a href="mailto:skillro.support@gmail.com">skillro.support@gmail.com</a>.</p>
+  </section>
+
+  <!-- ARABIC -->
+  <section id="ar" class="lang-block" dir="rtl">
+    <h1>الشروط والأحكام</h1>
+    <p class="updated">آخر تحديث: أكتوبر 2026</p>
+
+    <p>تحكم هذه الشروط والأحكام ("الشروط") استخدامك لتطبيق Monevro ("مونيفرو"، "التطبيق") الذي تطوره Skillro ("نحن"). باستخدامك للتطبيق أو إنشائك لحساب، فإنك توافق على هذه الشروط. إذا كنت لا توافق عليها، يرجى عدم استخدام التطبيق.</p>
+
+    <h2>1. الخدمة</h2>
+    <p>يساعدك مونيفرو في تتبع المصروفات والدخل، وتخطيط الميزانيات، وتحديد الأهداف المالية، ومسح الإيصالات. كما يوفر مميزات اختيارية مدعومة بالذكاء الاصطناعي تولّد اقتراحات مالية بناءً على البيانات التي تُدخلها.</p>
+
+    <h2>2. الحسابات</h2>
+    <p>يجب عليك تقديم بيانات صحيحة عند إنشاء الحساب. أنت مسؤول عن الحفاظ على سرية بيانات الدخول الخاصة بك وعن أي نشاط يتم من خلال حسابك.</p>
+
+    <h2>3. ليس استشارة مالية</h2>
+    <p>مونيفرو أداة تنظيم شخصية. النصائح والخطط المولّدة بالذكاء الاصطناعي وقراءة الإيصالات مقدَّمة لأغراض إعلامية عامة فقط، وليست استشارة مالية أو استثمارية أو ضريبية أو قانونية متخصصة، وقد تحتوي على أخطاء. يرجى مراجعة الأرقام المهمة بنفسك واستشارة مختص مؤهل قبل اتخاذ أي قرار مالي. تظل أنت المسؤول وحدك عن قراراتك المالية.</p>
+
+    <h2>4. الاشتراكات والفوترة</h2>
+    <ul>
+      <li>يوفر مونيفرو باقة مجانية واشتراكات بريميوم اختيارية (شهرية أو سنوية) يتم شراؤها عبر Google Play Billing وإدارتها بواسطة RevenueCat.</li>
+      <li>يتجدد الاشتراك تلقائيًا لنفس المدة والسعر ما لم يتم الإلغاء قبل نهاية الفترة الحالية بـ 24 ساعة على الأقل.</li>
+      <li>يمكنك إدارة أو إلغاء اشتراكك في أي وقت من خلال إعدادات حساب Google Play الخاص بك.</li>
+      <li>تُعرض الأسعار بعملتك المحلية وقد تختلف حسب المنطقة.</li>
+      <li>لا يتم رد أي مبالغ عن فترات الاشتراك الجزئية، إلا في الحالات التي يقتضيها القانون المعمول به أو سياسة استرداد Google Play.</li>
+    </ul>
+
+    <h2>5. الإعلانات</h2>
+    <p>تعرض الباقة المجانية إعلانات عبر Google AdMob. يتم شرح كيفية التعامل مع بيانات الإعلانات في <a href="monevro-privacy.html" id="privacy-inline-ar">سياسة الخصوصية</a> الخاصة بنا.</p>
+
+    <h2>6. محتوى المستخدم</h2>
+    <p>تحتفظ بملكية البيانات التي تُدخلها، مثل المصروفات والدخل والميزانيات والأهداف وجهات الاتصال. باستخدامك للتطبيق، فإنك تمنح Skillro ترخيصًا محدودًا لتخزين ومعالجة هذه البيانات بغرض تقديم مميزات التطبيق لك فقط، بما في ذلك إرسال البيانات الملخّصة اللازمة إلى مزودي الذكاء الاصطناعي الموضحين في سياسة الخصوصية.</p>
+
+    <h2>7. الاستخدام المقبول</h2>
+    <p>توافق على عدم إساءة استخدام التطبيق، بما في ذلك محاولة تعطيل عمله أو تجاوز حدود الباقات أو الهندسة العكسية له أو إساءة استخدام مميزات الذكاء الاصطناعي أو استخدامه لأي غرض غير قانوني.</p>
+
+    <h2>8. الإنهاء</h2>
+    <p>يجوز لنا تعليق أو إنهاء وصولك للتطبيق في حال مخالفة هذه الشروط. يمكنك التوقف عن استخدام التطبيق وحذف حسابك في أي وقت من إعدادات التطبيق.</p>
+
+    <h2>9. إخلاء المسؤولية</h2>
+    <p>يتم تقديم مونيفرو "كما هو" دون أي ضمانات من أي نوع. نحن لا نضمن أن يعمل التطبيق دون انقطاع أو أخطاء، ولا دقة الاقتراحات المولدة بالذكاء الاصطناعي أو استخراج بيانات الإيصالات.</p>
+
+    <h2>10. حدود المسؤولية</h2>
+    <p>إلى أقصى حد يسمح به القانون، لا تتحمل Skillro أو مطوروها المسؤولية عن أي أضرار غير مباشرة أو عرضية أو تبعية، أو عن أي خسائر مالية، ناتجة عن استخدامك للتطبيق.</p>
+
+    <h2>11. تعديلات على هذه الشروط</h2>
+    <p>قد نقوم بتحديث هذه الشروط من وقت لآخر. استمرارك في استخدام التطبيق بعد سريان التعديلات يعني موافقتك على الشروط المُحدّثة.</p>
+
+    <h2>12. التواصل</h2>
+    <p>إذا كانت لديك أي أسئلة حول هذه الشروط، تواصل مع Skillro على <a href="mailto:skillro.support@gmail.com">skillro.support@gmail.com</a>.</p>
+  </section>
+
+</main>
+
+<footer>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="monevro.html">Monevro</a>
+    <a href="monevro-privacy.html" id="privacy-link">Privacy Policy</a>
+  </nav>
+  <p>© 2026 Skillro. All rights reserved.</p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('en').classList.toggle('visible', lang === 'en');
+    document.getElementById('ar').classList.toggle('visible', lang === 'ar');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-ar').classList.toggle('active', lang === 'ar');
+    document.documentElement.lang = lang;
+    var href = 'monevro-privacy.html?lang=' + lang;
+    document.getElementById('privacy-link').href = href;
+    document.getElementById('privacy-inline').href = href;
+    document.getElementById('privacy-inline-ar').href = href;
+    document.getElementById('privacy-link').textContent = lang === 'ar' ? 'سياسة الخصوصية' : 'Privacy Policy';
+  }
+  // Auto-select language from ?lang=ar query param (used by the Flutter app)
+  var requested = new URLSearchParams(window.location.search).get('lang');
+  if (requested === 'ar' || requested === 'en') setLang(requested);
+</script>
+
+</body>
+</html>
