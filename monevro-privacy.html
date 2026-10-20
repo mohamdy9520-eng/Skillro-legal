@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>Monevro - Privacy Policy | سياسة الخصوصية</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card: #171a21;
+    --text: #e8e9ec;
+    --muted: #9aa0ab;
+    --accent: #4f8cff;
+    --border: #262a33;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, "Cairo", Arial, sans-serif;
+    line-height: 1.8;
+  }
+  .wrap {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  header h1 {
+    font-size: 28px;
+    margin-bottom: 6px;
+  }
+  header p {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 4px 0;
+  }
+  .lang-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .lang-toggle button {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .lang-toggle button.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  section.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px 26px;
+    margin-bottom: 18px;
+  }
+  h2 {
+    font-size: 18px;
+    color: var(--accent);
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+  p, li { color: var(--text); font-size: 15px; }
+  ul { padding-inline-start: 20px; margin: 8px 0; }
+  li { margin-bottom: 8px; }
+  .muted { color: var(--muted); font-size: 13px; }
+  .lang-block[hidden] { display: none; }
+  a { color: var(--accent); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    text-align: start;
+  }
+  th { color: var(--muted); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Monevro</h1>
+    <p>المطوّر: <strong>Skillro</strong> &nbsp;|&nbsp; Developer: <strong>Skillro</strong></p>
+    <p id="updated-label">تاريخ السريان وآخر تحديث: 18 أكتوبر 2026 &nbsp;|&nbsp; Effective &amp; last updated: October 18, 2026</p>
+  </header>
+
+  <div class="lang-toggle">
+    <button id="btn-ar" class="active" onclick="setLang('ar')">العربية</button>
+    <button id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- ============ ARABIC ============ -->
+  <div id="lang-ar" class="lang-block">
+
+    <section class="card">
+      <h2>مقدمة</h2>
+      <p>
+        تطبيق <strong>Monevro</strong> (تطبيق تتبع مصاريف يعمل بالذكاء الاصطناعي) من تطوير <strong>Skillro</strong> ("نحن"). توضح سياسة الخصوصية هذه كيفية جمع التطبيق للبيانات، واستخدامها، ومشاركتها، وحمايتها عند استخدامك له. باستخدامك للتطبيق فإنك توافق على هذه السياسة.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>البيانات التي نجمعها</h2>
+      <ul>
+        <li><strong>بيانات الحساب:</strong> البريد الإلكتروني، ومعرّف المستخدم (User ID)، وذلك عبر خدمة Firebase Authentication من Google لإنشاء حسابك وتسجيل الدخول.</li>
+        <li><strong>تسجيل الدخول بحساب جوجل (اختياري):</strong> عند اختيار "تسجيل الدخول عبر Google"، نحصل من جوجل على اسمك وبريدك الإلكتروني وصورة حسابك (إن وُجدت) لإنشاء/الدخول لحسابك في Monevro.</li>
+        <li><strong>البيانات المالية:</strong> المصروفات، الدخل، الميزانيات (Budgets)، والأهداف المالية (Goals) التي تُدخلها بنفسك داخل التطبيق، ويتم تخزينها في قاعدة بيانات Cloud Firestore (من Google) المرتبطة بحسابك.</li>
+        <li><strong>جهات الاتصال التي تضيفها يدويًا (اختياري):</strong> الاسم والبريد الإلكتروني أو رقم الهاتف اللذان تكتبهما بنفسك داخل التطبيق، ويتم تخزينهما في Cloud Firestore المرتبطة بحسابك. لا يصل التطبيق إلى جهات الاتصال المحفوظة على جهازك ولا يقرؤها.</li>
+        <li><strong>بيانات الإيصالات (اختياري):</strong> عند استخدام ميزة مسح الإيصالات، يتم إرسال صورة الإيصال إلى خدمة Google Gemini لاستخراج تفاصيل المصروف تلقائيًا. لا نقوم بتخزين صور الإيصالات لدينا؛ تُستخدم فقط لاستخراج بيانات المصروف ثم تُحذف، ويُحفظ فقط ما تم استخراجه من بيانات (مثل المبلغ والتاريخ والتاجر).</li>
+        <li><strong>بيانات الاشتراك:</strong> حالة اشتراكك (مجاني/شهري/سنوي) تُدار عبر خدمة RevenueCat لإدارة عمليات الشراء داخل التطبيق.</li>
+        <li><strong>بيانات المصادقة بالبصمة (اختياري):</strong> إذا فعّلت تسجيل الدخول بالبصمة، تتم معالجة بياناتك البيومترية بالكامل محليًا على جهازك عبر أنظمة الأمان الخاصة بنظام التشغيل (Android Keystore)، ولا يتم إرسالها أو تخزينها على خوادمنا أو خوادم أي طرف ثالث.</li>
+        <li><strong>رمز الإشعارات (FCM Token):</strong> لإرسال إشعارات التذكير والتنبيهات المتعلقة بميزانيتك، نستخدم رمز جهاز فريد عبر خدمة Firebase Cloud Messaging من Google.</li>
+        <li><strong>بيانات التحليلات (Firebase Analytics):</strong> نستخدم خدمة Google Analytics for Firebase لفهم كيفية استخدام التطبيق وتحسينه. تشمل البيانات المجمّعة أحداث الاستخدام (مثل الشاشات التي تفتحها والميزات التي تستخدمها)، ومعرّف تثبيت التطبيق (App Instance ID)، ومعلومات الجهاز (الطراز، إصدار نظام التشغيل، اللغة، إصدار التطبيق)، والموقع التقريبي (الدولة/المدينة) المستنتج من عنوان IP دون تخزين عنوان IP نفسه، وبيانات إيراد الإعلانات.</li>
+        <li><strong>بيانات الاستخدام الفني:</strong> معلومات تشخيصية أساسية (مثل عدد مرات استخدام ميزة الذكاء الاصطناعي) لإدارة الحدود المسموح بها لكل باقة.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>مشاركة البيانات مع خدمات الذكاء الاصطناعي</h2>
+      <p>
+        لتوليد النصائح المالية والخطط الشخصية، يقوم التطبيق بإرسال جزء من بياناتك المالية (مثل ملخصات الدخل والمصروفات والأهداف، ضمن نص الطلب الموجَّه للنموذج) إلى مزودي خدمات الذكاء الاصطناعي التاليين:
+      </p>
+      <table>
+        <tr><th>المزود</th><th>الغرض</th></tr>
+        <tr><td>OpenRouter</td><td>توليد خطط وتوصيات مالية بناءً على بياناتك (نماذج مختلفة حسب باقتك). قد يعيد OpenRouter توجيه الطلب إلى مزوّد النموذج الذي يشغّله.</td></tr>
+        <tr><td>Google Gemini</td><td>مزود احتياطي لتوليد النصائح، وقراءة صور الإيصالات (OCR)</td></tr>
+      </table>
+      <p class="muted">
+        لا يتم إرسال بريدك الإلكتروني أو أي معرّف شخصي مباشر ضمن هذه الطلبات — فقط البيانات المالية الملخّصة اللازمة لتوليد النصيحة. هذه الخدمات قد تحتفظ بسجلات مؤقتة للطلبات وفق سياساتها الخاصة، ولا نتحكم نحن في مدة أو طريقة تخزينها لدى هذه الأطراف.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>الإعلانات والمعرّفات الإعلانية</h2>
+      <p>
+        يعرض تطبيق Monevro إعلانات عبر خدمة <strong>Google AdMob</strong> لدعم استمرارية تقديم الميزات المجانية بالتطبيق. لهذا الغرض، قد يتم جمع ومشاركة البيانات التالية مع Google AdMob وشركائه من مزوّدي التقنيات الإعلانية (Ad Technology Providers):
+      </p>
+      <ul>
+        <li><strong>معرّف الإعلانات (Advertising ID)</strong> الخاص بجهازك.</li>
+        <li>بيانات فنية أساسية عن الجهاز (نوع الجهاز، نظام التشغيل، إصدار التطبيق).</li>
+        <li>بيانات تفاعلك مع الإعلانات (مشاهدة/نقر) لأغراض قياس الأداء ومنع الاحتيال الإعلاني.</li>
+      </ul>
+      <p>
+        حساب AdMob الخاص بالتطبيق مرتبط بـ Firebase، لذلك قد تتم مشاركة بيانات إيراد الإعلانات على مستوى كل مشاهدة (Impression-level ad revenue) بين AdMob وFirebase لأغراض التحليلات وقياس الأداء.
+      </p>
+      <p>
+        لمستخدمي المنطقة الاقتصادية الأوروبية (EEA) والمملكة المتحدة وسويسرا، يعرض التطبيق نموذج موافقة (Consent Management Platform) من Google عند أول استخدام، يتيح لك قبول أو رفض استخدام بياناتك لأغراض الإعلانات المخصصة (Personalized Ads)، وفقًا لسياسة موافقة المستخدم الأوروبية الخاصة بـ Google. يمكنك مراجعة أو تغيير اختيارك في أي وقت من داخل التطبيق عبر: <strong>الملف الشخصي ← البيانات والخصوصية ← خصوصية الإعلانات</strong> (يظهر هذا الخيار للمستخدمين في المناطق التي يُشترط فيها ذلك).
+      </p>
+      <p>
+        كما يمكنك التحكم في الإعلانات المخصصة على مستوى جهازك من إعدادات Android (إعدادات Google ← الإعلانات)، حيث يمكنك إعادة تعيين معرّف الإعلانات أو حذفه أو إيقاف تخصيص الإعلانات.
+      </p>
+      <p class="muted">
+        لمزيد من التفاصيل، يمكنك مراجعة <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">سياسة خصوصية Google</a>، و<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">كيف تستخدم Google البيانات عند استخدام تطبيقات الشركاء</a>، وصفحة <a href="https://support.google.com/admob/answer/9012903" target="_blank" rel="noopener">شركاء AdMob الإعلانيين</a>.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>كيف نستخدم بياناتك</h2>
+      <ul>
+        <li>لتقديم وظائف التطبيق الأساسية (تتبع المصاريف، الميزانيات، الأهداف).</li>
+        <li>لتوليد نصائح وخطط مالية مخصصة عبر الذكاء الاصطناعي.</li>
+        <li>لإدارة اشتراكك ومزاياك حسب الباقة (مجاني/مدفوع).</li>
+        <li>لعرض الإعلانات وقياس أدائها (للمستخدمين على الباقة المجانية).</li>
+        <li>لتحليل استخدام التطبيق وتحسين أدائه وإصلاح الأعطال.</li>
+        <li>لحماية التطبيق ومنع إساءة الاستخدام والاحتيال.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>الأساس القانوني للمعالجة (لمستخدمي المنطقة الاقتصادية الأوروبية)</h2>
+      <ul>
+        <li><strong>تنفيذ الخدمة:</strong> معالجة بيانات الحساب والبيانات المالية لازمة لتقديم وظائف التطبيق التي طلبتها.</li>
+        <li><strong>الموافقة:</strong> الإعلانات المخصصة، ومعرّف الإعلانات، وبعض عمليات التحليلات تتم بناءً على موافقتك، ويمكنك سحبها في أي وقت دون أن يؤثر ذلك على مشروعية المعالجة السابقة.</li>
+        <li><strong>المصلحة المشروعة:</strong> تأمين التطبيق ومنع الاحتيال وتحسين الأداء، بما لا يتعارض مع حقوقك.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>مشاركة البيانات مع أطراف ثالثة</h2>
+      <p>نشارك بياناتك فقط مع مزودي الخدمات التالية، وذلك بالقدر اللازم لتشغيل التطبيق:</p>
+      <ul>
+        <li><strong>Google Firebase</strong> (المصادقة وقاعدة البيانات والإشعارات والتحليلات Analytics)</li>
+        <li><strong>OpenRouter</strong> (توليد النصائح المالية بالذكاء الاصطناعي)</li>
+        <li><strong>Google Gemini</strong> (نصائح احتياطية + قراءة الإيصالات)</li>
+        <li><strong>RevenueCat</strong> (إدارة الاشتراكات والمدفوعات داخل التطبيق)</li>
+        <li><strong>Google AdMob</strong> (عرض الإعلانات وقياس أدائها — راجع قسم "الإعلانات والمعرّفات الإعلانية" أعلاه)</li>
+      </ul>
+      <p>لا نبيع بياناتك الشخصية لأي طرف ثالث. مشاركة معرّف الإعلانات مع Google AdMob (الموضحة أعلاه) تتم فقط لغرض عرض الإعلانات وقياس أدائها، وليست بيعًا للبيانات. قد نفصح عن بياناتك أيضًا إذا فرض القانون أو جهة قضائية ذلك.</p>
+    </section>
+
+    <section class="card">
+      <h2>نقل البيانات دوليًا</h2>
+      <p>
+        قد تتم معالجة بياناتك وتخزينها على خوادم تابعة لمزودي الخدمات المذكورين أعلاه في دول غير بلد إقامتك، بما فيها الولايات المتحدة. نعتمد على مزودين يطبقون ضمانات مناسبة لحماية البيانات أثناء نقلها ومعالجتها وفق القوانين المعمول بها.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>الاحتفاظ بالبيانات</h2>
+      <ul>
+        <li><strong>بيانات الحساب والبيانات المالية:</strong> نحتفظ بها طوال فترة وجود حسابك، وتُحذف نهائيًا عند حذف حسابك من داخل التطبيق.</li>
+        <li><strong>بيانات التحليلات (Firebase Analytics):</strong> يتم الاحتفاظ بها لفترة محدودة (حتى 14 شهرًا) وفق إعدادات الاحتفاظ في Firebase، ثم تُحذف تلقائيًا.</li>
+        <li><strong>بيانات الإعلانات:</strong> تحتفظ بها Google وشركاؤها وفق سياساتهم الخاصة.</li>
+        <li><strong>الطلبات المرسلة لخدمات الذكاء الاصطناعي:</strong> تخضع لسياسات الاحتفاظ لدى OpenRouter وGoogle Gemini، ولا نتحكم فيها.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>حقوقك</h2>
+      <ul>
+        <li><strong>حذف البيانات المالية فقط:</strong> يمكنك إعادة تعيين بياناتك المالية (مسح المصروفات/الميزانيات/الأهداف) من الشاشة الرئيسية للتطبيق عبر القائمة (⋮) ← "مسح كل البيانات"، مع الاحتفاظ بحسابك.</li>
+        <li><strong>حذف الحساب بالكامل:</strong> يمكنك حذف حسابك وكل بياناتك المرتبطة به نهائيًا مباشرة من داخل التطبيق (راجع قسم "حذف الحساب" أدناه)، أو عبر التواصل معنا على البريد أسفل الصفحة.</li>
+        <li><strong>الوصول والتصحيح:</strong> يمكنك مراجعة وتعديل بياناتك المالية مباشرة من داخل التطبيق في أي وقت.</li>
+        <li><strong>خصوصية الإعلانات:</strong> يمكنك مراجعة أو تغيير موافقتك على الإعلانات المخصصة في أي وقت من داخل التطبيق عبر الملف الشخصي ← البيانات والخصوصية ← خصوصية الإعلانات (حيثما كان هذا الخيار مطلوبًا في منطقتك).</li>
+        <li><strong>حقوق إضافية (لمستخدمي المنطقة الاقتصادية الأوروبية والمملكة المتحدة):</strong> يحق لك طلب نسخة من بياناتك، وتصحيحها، وحذفها، وتقييد معالجتها، ونقلها، والاعتراض على معالجتها، وسحب موافقتك في أي وقت، وتقديم شكوى لدى الجهة الرقابية لحماية البيانات في بلدك. لممارسة أي من هذه الحقوق تواصل معنا على البريد أسفل الصفحة.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>حذف الحساب</h2>
+      <p>
+        يمكنك حذف حسابك وجميع بياناتك المرتبطة به بشكل نهائي مباشرة من داخل
+        تطبيق Monevro، دون الحاجة للتواصل معنا، وذلك عبر المسار التالي:
+      </p>
+      <p><strong>الملف الشخصي ← تسجيل الدخول والأمان ← حذف الحساب</strong></p>
+      <p>
+        عند تأكيد الحذف، يتم إزالة بياناتك بشكل نهائي من قاعدة بيانات Firebase
+        الخاصة بنا، وتشمل:
+      </p>
+      <ul>
+        <li>بيانات الحساب (الاسم، البريد الإلكتروني، الصورة الشخصية)</li>
+        <li>سجل المعاملات المالية (المصاريف والدخل)</li>
+        <li>الميزانيات والأهداف المالية</li>
+        <li>جهات الاتصال المرتبطة بالتطبيق</li>
+        <li>رمز إشعارات الجهاز (FCM Token)</li>
+      </ul>
+      <p class="muted">
+        يتم الحذف بشكل فوري ونهائي ولا يمكن التراجع عنه أو استعادة البيانات
+        بعد تأكيد العملية. يمكنك أيضًا طلب الحذف عبر مراسلتنا على البريد أسفل الصفحة. ملحوظة: بيانات التحليلات المجهولة (Firebase Analytics) قد تبقى لفترة محدودة وفق إعدادات الاحتفاظ ثم تُحذف تلقائيًا، كما أن السجلات لدى مزودي الإعلانات والذكاء الاصطناعي تخضع لسياساتهم الخاصة.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>أمان البيانات</h2>
+      <p>
+        يتم تخزين بياناتك على خوادم Google Firebase الآمنة، وتُشفَّر أثناء نقلها عبر اتصالات HTTPS، ويتم تطبيق قواعد أمان (Security Rules) للتأكد من أن كل مستخدم يستطيع الوصول إلى بياناته الخاصة فقط. ومع ذلك، لا توجد وسيلة نقل أو تخزين إلكتروني آمنة بنسبة 100%، لذلك لا يمكننا ضمان أمان مطلق.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>خصوصية الأطفال</h2>
+      <p>التطبيق غير موجّه للأطفال أقل من 13 عامًا (أو أقل من السن القانوني للموافقة الرقمية في بلدك، والذي قد يصل إلى 16 عامًا)، ولا نجمع بيانات عن قصد من هذه الفئة العمرية ولا نوجّه إليها الإعلانات. إذا علمت أن طفلًا قدّم لنا بياناته، تواصل معنا لنحذفها فورًا.</p>
+    </section>
+
+    <section class="card">
+      <h2>التغييرات على هذه السياسة</h2>
+      <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. سيتم نشر أي تعديلات على هذه الصفحة مع تاريخ التحديث، وفي حال التغييرات الجوهرية سنُنبّهك عبر إشعار داخل التطبيق أو بوسيلة مناسبة أخرى. استمرارك في استخدام التطبيق بعد التحديث يعني موافقتك على السياسة المعدّلة.</p>
+    </section>
+
+    <section class="card">
+      <h2>تواصل معنا</h2>
+      <p>لأي استفسار بخصوص هذه السياسة، أو لممارسة حقوقك، أو لطلب حذف بياناتك، تواصل مع <strong>Skillro</strong> عبر:</p>
+      <p>📧 <a href="mailto:skillro.support@gmail.com">skillro.support@gmail.com</a></p>
+    </section>
+
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <div id="lang-en" class="lang-block" hidden>
+
+    <section class="card">
+      <h2>Introduction</h2>
+      <p>
+        <strong>Monevro</strong> (an AI-powered expense tracking app) is developed by <strong>Skillro</strong> ("we", "us"). This Privacy Policy explains how the app collects, uses, shares, and protects your data when you use it. By using Monevro, you agree to this policy.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Information We Collect</h2>
+      <ul>
+        <li><strong>Account data:</strong> your email address and user ID, via Firebase Authentication (Google) to create and manage your account.</li>
+        <li><strong>Sign in with Google (optional):</strong> when you choose "Sign in with Google," we receive your name, email address, and profile photo (if available) from Google to create/access your Monevro account.</li>
+        <li><strong>Financial data:</strong> expenses, income, budgets, and financial goals you enter in the app, stored in Cloud Firestore (Google) linked to your account.</li>
+        <li><strong>Contacts you add manually (optional):</strong> the name and email address or phone number you type yourself inside the app, stored in Cloud Firestore linked to your account. The app does not access or read the contacts saved on your device.</li>
+        <li><strong>Receipt data (optional):</strong> when you use the receipt-scanning feature, the receipt image is sent to Google Gemini to automatically extract expense details. We do not store receipt images; they are used only to extract the expense details and are then discarded, and only the extracted data (such as amount, date, and merchant) is saved.</li>
+        <li><strong>Subscription data:</strong> your subscription tier (free/monthly/yearly) is managed via RevenueCat, our in-app purchase management provider.</li>
+        <li><strong>Biometric login data (optional):</strong> if you enable biometric login, your biometric data is processed entirely on-device via your OS's secure hardware (Android Keystore) and is never transmitted to or stored on our servers or any third party.</li>
+        <li><strong>Push notification token (FCM):</strong> to deliver reminders and budget alerts, we use a unique device token via Google's Firebase Cloud Messaging service.</li>
+        <li><strong>Analytics data (Firebase Analytics):</strong> we use Google Analytics for Firebase to understand how the app is used and to improve it. Data collected includes app usage events (such as screens viewed and features used), the app instance ID, device information (model, OS version, language, app version), approximate location (country/city) derived from your IP address without storing the IP address itself, and ad revenue data.</li>
+        <li><strong>Technical usage data:</strong> basic diagnostic information (e.g., AI feature usage counts) to enforce plan limits.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Sharing Data with AI Services</h2>
+      <p>
+        To generate personalized financial advice and plans, the app sends part of your financial data (such as summarized income, expenses, and goals, included in the prompt text) to the following AI providers:
+      </p>
+      <table>
+        <tr><th>Provider</th><th>Purpose</th></tr>
+        <tr><td>OpenRouter</td><td>Generates financial plans and recommendations based on your data (model varies by subscription tier). OpenRouter may route the request to the provider that runs the selected model.</td></tr>
+        <tr><td>Google Gemini</td><td>Backup provider for advice generation, and receipt image OCR</td></tr>
+      </table>
+      <p class="muted">
+        Your email address or any direct personal identifier is not included in these requests — only the summarized financial data needed to generate advice. These third-party services may retain temporary logs of requests under their own policies, which we do not control.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Advertising &amp; Advertising Identifiers</h2>
+      <p>
+        Monevro displays ads through <strong>Google AdMob</strong> to help keep the app's core features free. For this purpose, the following data may be collected and shared with Google AdMob and its ad technology partners:
+      </p>
+      <ul>
+        <li>Your device's <strong>Advertising ID</strong>.</li>
+        <li>Basic technical device data (device type, OS, app version).</li>
+        <li>Ad interaction data (impressions/clicks) for performance measurement and fraud prevention.</li>
+      </ul>
+      <p>
+        The app's AdMob account is linked to Firebase, so impression-level ad revenue data may be shared between AdMob and Firebase for analytics and performance measurement.
+      </p>
+      <p>
+        For users in the European Economic Area (EEA), the UK, and Switzerland, the app shows a Google Consent Management Platform (CMP) on first use, letting you accept or decline the use of your data for personalized ads, in accordance with Google's EU user consent policy. You can review or change your choice anytime from: <strong>Profile → Data &amp; Privacy → Ads Privacy Options</strong> (this option is shown to users in regions where it is required).
+      </p>
+      <p>
+        You can also control ad personalization at the device level from Android settings (Google settings → Ads), where you can reset or delete your advertising ID and opt out of ads personalization.
+      </p>
+      <p class="muted">
+        For more details, see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>, <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses data when you use our partners' sites or apps</a>, and <a href="https://support.google.com/admob/answer/9012903" target="_blank" rel="noopener">AdMob's ad partners page</a>.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>How We Use Your Data</h2>
+      <ul>
+        <li>To provide core app functionality (expense tracking, budgets, goals).</li>
+        <li>To generate personalized AI-powered financial advice and plans.</li>
+        <li>To manage your subscription and tier-based features (free/paid).</li>
+        <li>To display ads and measure their performance (for free-tier users).</li>
+        <li>To analyze app usage, improve performance, and fix issues.</li>
+        <li>To protect the app and prevent abuse and fraud.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Legal Basis for Processing (EEA Users)</h2>
+      <ul>
+        <li><strong>Performance of a contract:</strong> processing account and financial data is necessary to provide the app features you requested.</li>
+        <li><strong>Consent:</strong> personalized ads, the advertising ID, and certain analytics processing are based on your consent, which you can withdraw at any time without affecting the lawfulness of prior processing.</li>
+        <li><strong>Legitimate interests:</strong> securing the app, preventing fraud, and improving performance, where these do not override your rights.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Third-Party Sharing</h2>
+      <p>We only share your data with the following service providers, to the extent necessary to operate the app:</p>
+      <ul>
+        <li><strong>Google Firebase</strong> (authentication, database, notifications, and Analytics)</li>
+        <li><strong>OpenRouter</strong> (AI-generated financial advice)</li>
+        <li><strong>Google Gemini</strong> (backup advice generation + receipt OCR)</li>
+        <li><strong>RevenueCat</strong> (in-app subscription and purchase management)</li>
+        <li><strong>Google AdMob</strong> (ad serving and performance measurement — see the "Advertising &amp; Advertising Identifiers" section above)</li>
+      </ul>
+      <p>We do not sell your personal data to any third party. Sharing your advertising identifier with Google AdMob (described above) is solely for serving and measuring ads, and does not constitute a sale of data. We may also disclose data if required by law or a legal authority.</p>
+    </section>
+
+    <section class="card">
+      <h2>International Data Transfers</h2>
+      <p>
+        Your data may be processed and stored on servers operated by the providers listed above in countries other than your country of residence, including the United States. We rely on providers that apply appropriate safeguards to protect data during transfer and processing in accordance with applicable laws.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Data Retention</h2>
+      <ul>
+        <li><strong>Account and financial data:</strong> kept for as long as your account exists, and permanently deleted when you delete your account within the app.</li>
+        <li><strong>Analytics data (Firebase Analytics):</strong> retained for a limited period (up to 14 months) according to Firebase's retention settings, then automatically deleted.</li>
+        <li><strong>Advertising data:</strong> retained by Google and its partners under their own policies.</li>
+        <li><strong>Requests sent to AI services:</strong> subject to the retention policies of OpenRouter and Google Gemini, which we do not control.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Your Rights</h2>
+      <ul>
+        <li><strong>Reset financial data only:</strong> you can reset your financial data (clear expenses/budgets/goals) from the app's Home screen via the menu (⋮) → "Reset all data", while keeping your account.</li>
+        <li><strong>Full account deletion:</strong> you can permanently delete your account and all associated data directly within the app (see the "Delete Account" section below), or by contacting us at the email below.</li>
+        <li><strong>Access and correction:</strong> you can review and edit your financial data directly within the app at any time.</li>
+        <li><strong>Ads privacy:</strong> you can review or change your consent for personalized ads at any time from within the app via Profile → Data &amp; Privacy → Ads Privacy Options (where this option is required in your region).</li>
+        <li><strong>Additional rights (EEA and UK users):</strong> you have the right to request a copy of your data, rectify it, erase it, restrict its processing, port it, object to its processing, withdraw your consent at any time, and lodge a complaint with your local data protection authority. To exercise any of these rights, contact us at the email below.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Delete Account</h2>
+      <p>
+        You can permanently delete your account and all associated data
+        directly within the Monevro app, without needing to contact us,
+        via the following path:
+      </p>
+      <p><strong>Profile → Login &amp; Security → Delete Account</strong></p>
+      <p>
+        Upon confirming deletion, your data is permanently removed from our
+        Firebase database, including:
+      </p>
+      <ul>
+        <li>Account data (name, email, profile photo)</li>
+        <li>Transaction history (expenses and income)</li>
+        <li>Budgets and financial goals</li>
+        <li>Contacts linked within the app</li>
+        <li>Device notification token (FCM Token)</li>
+      </ul>
+      <p class="muted">
+        Deletion is immediate and permanent — it cannot be undone, and data
+        cannot be recovered once the action is confirmed. You can also request deletion by emailing us at the address below. Note: anonymous analytics data (Firebase Analytics) may remain for a limited period under its retention settings and is then deleted automatically, and logs held by advertising and AI providers are subject to their own policies.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Data Security</h2>
+      <p>
+        Your data is stored on Google Firebase's secure servers, encrypted in transit over HTTPS, with security rules enforced so each user can only access their own data. However, no method of electronic transmission or storage is 100% secure, so we cannot guarantee absolute security.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Children's Privacy</h2>
+      <p>Monevro is not directed at children under 13 (or under the applicable age of digital consent in your country, which may be up to 16), and we do not knowingly collect data from this age group or direct ads to it. If you believe a child has provided us with data, contact us and we will delete it promptly.</p>
+    </section>
+
+    <section class="card">
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page along with the updated date, and for material changes we will notify you through an in-app notice or another appropriate means. Continuing to use the app after an update means you accept the revised policy.</p>
+    </section>
+
+    <section class="card">
+      <h2>Contact Us</h2>
+      <p>For any questions about this policy, to exercise your rights, or to request data deletion, contact <strong>Skillro</strong> at:</p>
+      <p>📧 <a href="mailto:skillro.support@gmail.com">skillro.support@gmail.com</a></p>
+    </section>
+
+  </div>
+
+</div>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('lang-ar').hidden = lang !== 'ar';
+    document.getElementById('lang-en').hidden = lang !== 'en';
+    document.getElementById('btn-ar').classList.toggle('active', lang === 'ar');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = lang;
+  }
+  // Auto-select language from ?lang=ar|en query param (e.g. when linked from the terms page or the app)
+  var requested = new URLSearchParams(window.location.search).get('lang');
+  if (requested === 'ar' || requested === 'en') setLang(requested);
+</script>
+
+</body>
+</html>
